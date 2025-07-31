@@ -8,60 +8,41 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Poppins e Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Favicon (Exemplo) -->
-    <link rel="icon" href="https://placehold.co/32x32/25D366/FFFFFF?text=IA" type="image/png">
+    <link rel="icon" href="https://placehold.co/32x32/10B981/FFFFFF?text=IA" type="image/png">
 
     <style>
-        /* Estilo para a fonte Inter */
+        /* Define as fontes para o projeto */
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 */
         }
         /* Efeito de gradiente no fundo do Hero */
         .hero-gradient {
-            /* IMPORTANTE: Para trocar a imagem de fundo, substitua a URL abaixo pela URL da sua imagem. */
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
             background-size: cover;
-        }
-        /* Efeito de sombra sutil nos cards */
-        .card-shadow {
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .card-shadow:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        /* Classe para manter a proporção do vídeo responsivo */
-        .aspect-video {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
-        }
-        .aspect-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="text-slate-800">
 
     <!-- Seção Hero -->
     <header class="hero-gradient text-white">
-        <div class="container mx-auto px-6 py-20 md:py-32 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Seu Cardápio é Delicioso.<br>Suas Fotos Também Deveriam Ser!</h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Transforme a imagem do seu restaurante com o poder da Inteligência Artificial e veja suas vendas decolarem.</p>
-            <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg inline-block mb-8">
-                <p class="text-lg font-semibold">Restaurantes com visuais profissionais faturam até <span class="text-green-300">40% mais</span>!</p>
+        <div class="container mx-auto px-6 py-24 md:py-40 text-center">
+            <h1 class="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight mb-4">Seu Cardápio é Delicioso.<br>Suas Fotos Deveriam Ser Também.</h1>
+            <p class="font-inter text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-200">Transforme a imagem do seu restaurante com o poder da Inteligência Artificial e veja suas vendas decolarem.</p>
+            <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl inline-block mb-8">
+                <p class="font-inter font-semibold">Restaurantes com visuais profissionais faturam até <span class="text-emerald-300">40% mais</span>!</p>
             </div>
             <div>
-                <a href="https://wa.me/+5511989644235" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-transform transform hover:scale-105 inline-block">
+                <a href="https://wa.me/+5511989644235" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 inline-block">
                     Quero Vender Mais com Fotos Incríveis!
                 </a>
             </div>
@@ -69,125 +50,121 @@
     </header>
 
     <!-- Seção Como Funciona -->
-    <section id="como-funciona" class="py-16 md:py-24 bg-white">
+    <section id="como-funciona" class="py-20 md:py-28 bg-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Como a Mágica Acontece?</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto mb-12">Nosso processo é simples, rápido e focado em resultados para o seu negócio.</p>
-            <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+            <h2 class="font-poppins text-3xl md:text-4xl font-bold mb-4">Como a Mágica Acontece?</h2>
+            <p class="font-inter text-slate-600 max-w-2xl mx-auto mb-16">Nosso processo é simples, rápido e focado em resultados para o seu negócio.</p>
+            <div class="grid md:grid-cols-3 gap-10 md:gap-16">
                 <!-- Passo 1 -->
                 <div class="flex flex-col items-center">
-                    <div class="bg-green-100 text-green-600 rounded-full p-5 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1-1m6-5l-1.414-1.414a2 2 0 00-2.828 0L11 11m-4 4l4-4m6 6l-4-4" /></svg>
+                    <div class="bg-emerald-100 text-emerald-600 rounded-2xl p-5 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1-1m6-5l-1.414-1.414a2 2 0 00-2.828 0L11 11m-4 4l4-4m6 6l-4-4" /></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">1. Diagnóstico</h3>
-                    <p class="text-gray-600">Você escolhe o pacote e nos envia fotos (até do celular!) ou a descrição dos seus pratos.</p>
+                    <h3 class="font-poppins text-xl font-bold mb-2">1. Diagnóstico</h3>
+                    <p class="font-inter text-slate-600">Você escolhe o pacote e nos envia as fotos ou a descrição dos seus pratos.</p>
                 </div>
                 <!-- Passo 2 -->
                 <div class="flex flex-col items-center">
-                    <div class="bg-green-100 text-green-600 rounded-full p-5 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    <div class="bg-emerald-100 text-emerald-600 rounded-2xl p-5 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">2. Criação com IA</h3>
-                    <p class="text-gray-600">Nossa tecnologia recria suas imagens com foco em textura e cores, mantendo a fidelidade ao seu produto.</p>
+                    <h3 class="font-poppins text-xl font-bold mb-2">2. Criação com IA</h3>
+                    <p class="font-inter text-slate-600">Nossa tecnologia recria suas imagens com foco em textura e cores, mantendo a fidelidade.</p>
                 </div>
                 <!-- Passo 3 -->
                 <div class="flex flex-col items-center">
-                    <div class="bg-green-100 text-green-600 rounded-full p-5 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    <div class="bg-emerald-100 text-emerald-600 rounded-2xl p-5 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">3. Receba e Venda Mais</h3>
-                    <p class="text-gray-600">Entregamos todo o material pronto para postar, encantar clientes e aumentar seus pedidos.</p>
+                    <h3 class="font-poppins text-xl font-bold mb-2">3. Venda Mais</h3>
+                    <p class="font-inter text-slate-600">Entregamos o material pronto para postar, encantar clientes e aumentar seus pedidos.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seção de Pacotes -->
-    <section id="pacotes" class="py-16 md:py-24 bg-gray-50">
+    <section id="pacotes" class="py-20 md:py-28 bg-slate-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos Pacotes de Performance Visual</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Escolha o plano ideal para transformar a presença digital do seu restaurante.</p>
+            <div class="text-center mb-16">
+                <h2 class="font-poppins text-3xl md:text-4xl font-bold mb-4">Pacotes de Performance Visual</h2>
+                <p class="font-inter text-slate-600 max-w-2xl mx-auto">Escolha o plano ideal para a nova fase do seu restaurante.</p>
             </div>
-            <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Pacote Básico -->
-                <div class="bg-white rounded-xl p-8 border card-shadow transition-all duration-300">
-                    <h3 class="text-xl font-bold text-green-600 mb-2">🟢 START IA</h3>
-                    <p class="text-gray-500 mb-6">O essencial para começar a impactar.</p>
-                    <p class="text-4xl font-extrabold mb-6">R$ 699</p>
-                    <ul class="space-y-4 text-gray-700 mb-8">
-                        <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>6 fotos profissionais IA</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>6 vídeos curtos e impactantes</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Edição para redes sociais</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Entrega em 3 dias úteis</li>
+                <div class="bg-white rounded-2xl p-8 lg:p-10 flex flex-col">
+                    <h3 class="font-poppins font-bold text-emerald-600 text-lg mb-2">START IA</h3>
+                    <p class="font-inter text-slate-500 mb-6">O essencial para começar a impactar.</p>
+                    <p class="font-poppins font-bold text-5xl mb-6">R$ 699</p>
+                    <ul class="font-inter space-y-4 text-slate-700 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-3 mt-1">✓</span>6 fotos profissionais IA</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-3 mt-1">✓</span>6 vídeos curtos e impactantes</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-3 mt-1">✓</span>Edição para redes sociais</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-3 mt-1">✓</span>Entrega em 3 dias úteis</li>
                     </ul>
-                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20START%20IA." target="_blank" class="w-full text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition">Contratar Pacote</a>
+                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20START%20IA." target="_blank" class="w-full text-center bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3 px-6 rounded-xl transition-colors">Contratar Pacote</a>
                 </div>
 
                 <!-- Pacote Advanced (Destaque) -->
-                <div class="bg-white rounded-xl p-8 border-2 border-blue-500 relative card-shadow transition-all duration-300">
-                    <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-3 right-6">MAIS POPULAR</span>
-                    <h3 class="text-xl font-bold text-blue-600 mb-2">🔵 ADVANCED IA</h3>
-                    <p class="text-gray-500 mb-6">Mais conteúdo e criatividade para se destacar.</p>
-                    <p class="text-4xl font-extrabold mb-6">R$ 1.299</p>
-                    <ul class="space-y-4 text-gray-700 mb-8">
-                        <li class="flex items-center"><svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>12 fotos profissionais IA</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>12 vídeos em IA</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Edição premium</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Entrega em 7 dias úteis</li>
+                <div class="bg-slate-800 text-white rounded-2xl p-8 lg:p-10 flex flex-col relative overflow-hidden">
+                    <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full absolute top-6 right-6">MAIS POPULAR</span>
+                    <h3 class="font-poppins font-bold text-amber-400 text-lg mb-2">ADVANCED IA</h3>
+                    <p class="font-inter text-slate-300 mb-6">Mais conteúdo para se destacar.</p>
+                    <p class="font-poppins font-bold text-5xl mb-6">R$ 1.299</p>
+                    <ul class="font-inter space-y-4 text-slate-200 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-amber-400 mr-3 mt-1">✓</span>12 fotos profissionais IA</li>
+                        <li class="flex items-start"><span class="text-amber-400 mr-3 mt-1">✓</span>12 vídeos em IA</li>
+                        <li class="flex items-start"><span class="text-amber-400 mr-3 mt-1">✓</span>Edição premium</li>
+                        <li class="flex items-start"><span class="text-amber-400 mr-3 mt-1">✓</span>Entrega em 7 dias úteis</li>
                     </ul>
-                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20ADVANCED%20IA." target="_blank" class="w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition">Contratar Pacote</a>
+                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20ADVANCED%20IA." target="_blank" class="w-full text-center bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold py-3 px-6 rounded-xl transition-colors">Contratar Pacote</a>
                 </div>
 
                 <!-- Pacote Premium -->
-                <div class="bg-white rounded-xl p-8 border card-shadow transition-all duration-300">
-                    <h3 class="text-xl font-bold text-purple-600 mb-2">🟣 PREMIUM IA</h3>
-                    <p class="text-gray-500 mb-6">A solução completa para dominar o mercado.</p>
-                    <p class="text-4xl font-extrabold mb-6">R$ 2.299</p>
-                    <ul class="space-y-4 text-gray-700 mb-8">
-                        <li class="flex items-center"><svg class="h-6 w-6 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>24 fotos com qualidade superior</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>24 vídeos dinâmicos em IA</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Consultoria de imagem e suporte VIP</li>
-                        <li class="flex items-center"><svg class="h-6 w-6 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Entrega em 15 dias úteis</li>
+                <div class="bg-white rounded-2xl p-8 lg:p-10 flex flex-col">
+                    <h3 class="font-poppins font-bold text-indigo-600 text-lg mb-2">PREMIUM IA</h3>
+                    <p class="font-inter text-slate-500 mb-6">A solução completa para dominar.</p>
+                    <p class="font-poppins font-bold text-5xl mb-6">R$ 2.299</p>
+                    <ul class="font-inter space-y-4 text-slate-700 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">✓</span>24 fotos com qualidade superior</li>
+                        <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">✓</span>24 vídeos dinâmicos em IA</li>
+                        <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">✓</span>Consultoria de imagem e suporte VIP</li>
+                        <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">✓</span>Entrega em 15 dias úteis</li>
                     </ul>
-                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20PREMIUM%20IA." target="_blank" class="w-full text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition">Contratar Pacote</a>
+                    <a href="https://wa.me/+5511989644235?text=Olá!%20Tenho%20interesse%20no%20Pacote%20PREMIUM%20IA." target="_blank" class="w-full text-center bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3 px-6 rounded-xl transition-colors">Contratar Pacote</a>
                 </div>
             </div>
-            <div class="text-center mt-12">
-                <p class="text-lg text-gray-700 font-semibold">Facilitamos o pagamento nos cartões de crédito</p>
-                <div class="flex justify-center items-center space-x-4 mt-4">
-                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="h-8"/>
-                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" class="h-8"/>
-                    <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express" class="h-8"/>
-                    <span class="text-gray-600 font-medium">e outros.</span>
+            <div class="text-center mt-16">
+                <p class="font-inter text-lg text-slate-700 font-semibold">Facilitamos o pagamento nos cartões de crédito</p>
+                <div class="flex justify-center items-center space-x-4 mt-4 grayscale opacity-60">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="h-7"/>
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" class="h-7"/>
+                    <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express" class="h-7"/>
+                    <span class="font-inter text-slate-600 font-medium">e outros.</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Portfólio "Antes e Depois" -->
-    <section id="portfolio" class="py-16 md:py-24 bg-white">
+    <!-- Seção Portfólio "Antes e Depois" -->
+    <section id="portfolio" class="py-20 md:py-28 bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Veja a Transformação</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Mostre o resultado real que você entrega. Nada vende melhor que a prova.</p>
+            <div class="text-center mb-16">
+                <h2 class="font-poppins text-3xl md:text-4xl font-bold mb-4">Veja a Transformação</h2>
+                <p class="font-inter text-slate-600 max-w-2xl mx-auto">Nada vende melhor que a prova real do resultado.</p>
             </div>
             <div class="flex justify-center">
-                <!-- Exemplo 1 -->
-                <div class="text-center max-w-2xl">
-                    <h3 class="text-2xl font-bold mb-4">Exemplo de Prato</h3>
+                <div class="text-center w-full max-w-3xl">
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <p class="font-semibold mb-2 text-red-600">ANTES</p>
-                            <!-- Container que força o aspect ratio e corta a imagem -->
-                            <div class="rounded-lg shadow-md overflow-hidden" style="aspect-ratio: 4 / 3;">
+                            <p class="font-poppins font-semibold mb-3 text-slate-500">ANTES</p>
+                            <div class="rounded-2xl overflow-hidden" style="aspect-ratio: 4 / 3;">
                                 <img src="https://i.ibb.co/kpy7Xvw/Captura-de-Tela-2025-07-31-a-s-08-38-15.png" alt="Foto antes da edição" class="w-full h-full object-cover">
                             </div>
                         </div>
                         <div>
-                            <p class="font-semibold mb-2 text-green-600">DEPOIS (com IA)</p>
-                            <!-- Container que força o aspect ratio e corta a imagem -->
-                            <div class="rounded-lg shadow-lg border-2 border-green-500 overflow-hidden" style="aspect-ratio: 4 / 3;">
+                            <p class="font-poppins font-semibold mb-3 text-emerald-600">DEPOIS (COM IA)</p>
+                            <div class="rounded-2xl overflow-hidden" style="aspect-ratio: 4 / 3;">
                                 <img src="https://i.ibb.co/QjJzkyJn/VDEISO-00-00-31-25-Quadro004.jpg" alt="Foto depois da edição com IA" class="w-full h-full object-cover">
                             </div>
                         </div>
@@ -197,20 +174,17 @@
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Vídeos -->
-    <section id="videos" class="py-16 md:py-24 bg-gray-50">
+    <!-- Seção Vídeos -->
+    <section id="videos" class="py-20 md:py-28 bg-slate-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos Vídeos em Ação</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Vídeos curtos e dinâmicos para Reels e Stories que capturam a atenção.</p>
+            <div class="text-center mb-16">
+                <h2 class="font-poppins text-3xl md:text-4xl font-bold mb-4">Vídeos que Capturam a Atenção</h2>
+                <p class="font-inter text-slate-600 max-w-2xl mx-auto">Formato dinâmico para Reels e Stories que gera engajamento.</p>
             </div>
             <div class="flex justify-center">
-                <!-- Vídeo 1 -->
-                <div class="bg-white p-4 rounded-lg shadow-md w-full max-w-2xl">
-                    <div class="aspect-video">
-                        <!-- INSTRUÇÃO: Cole aqui o código de incorporação do seu vídeo (YouTube, Vimeo, etc.) -->
-                        <!-- Exemplo do YouTube: vá em "Compartilhar" > "Incorporar" e copie o código. -->
-                        <iframe src="https://www.youtube.com/embed/mogQtd_gbu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="w-full max-w-3xl rounded-2xl overflow-hidden shadow-sm bg-white p-2">
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/mogQtd_gbu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
                     </div>
                 </div>
             </div>
@@ -218,41 +192,40 @@
     </section>
 
     <!-- Seção FAQ -->
-    <section id="faq" class="py-16 md:py-24 bg-white">
+    <section id="faq" class="py-20 md:py-28 bg-white">
         <div class="container mx-auto px-6 max-w-3xl">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold">Ainda em Dúvida?</h2>
-                <p class="text-gray-600 mt-2">Respondemos as perguntas mais comuns.</p>
+            <div class="text-center mb-16">
+                <h2 class="font-poppins text-3xl md:text-4xl font-bold">Perguntas Frequentes</h2>
             </div>
             <div class="space-y-6">
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2">As fotos parecerão com a minha comida de verdade?</h3>
-                    <p class="text-gray-700">Sim! Nosso principal objetivo é a autenticidade. Usamos suas fotos como base para garantir que o resultado final seja uma versão aprimorada e realista do seu prato, não algo genérico.</p>
+                <div class="bg-slate-50 p-6 rounded-2xl">
+                    <h3 class="font-poppins font-bold text-lg mb-2">As fotos parecerão com a minha comida de verdade?</h3>
+                    <p class="font-inter text-slate-700">Sim! Nosso principal objetivo é a autenticidade. Usamos suas fotos como base para garantir que o resultado final seja uma versão aprimorada e realista do seu prato, não algo genérico.</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2">E se eu não gostar do resultado?</h3>
-                    <p class="text-gray-700">Sua satisfação é nossa prioridade. Oferecemos uma rodada de ajustes em todos os pacotes para garantir que o material fique perfeito para sua marca e alinhado com suas expectativas.</p>
+                <div class="bg-slate-50 p-6 rounded-2xl">
+                    <h3 class="font-poppins font-bold text-lg mb-2">E se eu não gostar do resultado?</h3>
+                    <p class="font-inter text-slate-700">Sua satisfação é nossa prioridade. Oferecemos uma rodada de ajustes em todos os pacotes para garantir que o material fique perfeito para sua marca e alinhado com suas expectativas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seção Final CTA -->
-    <section class="bg-green-600 text-white">
-        <div class="container mx-auto px-6 py-20 text-center">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Pronto para Ter um Menu Irresistível?</h2>
-            <p class="text-green-100 max-w-2xl mx-auto mb-8">Fale agora com um especialista e veja como podemos transformar a imagem do seu restaurante. A agenda é limitada!</p>
-            <a href="https://wa.me/+5511989644235" target="_blank" class="bg-white hover:bg-gray-100 text-green-600 font-bold py-4 px-8 rounded-lg text-xl transition-transform transform hover:scale-105 inline-block">
+    <section class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h2 class="font-poppins text-3xl md:text-4xl font-extrabold mb-4">Pronto para Ter um Menu Irresistível?</h2>
+            <p class="font-inter text-slate-300 max-w-2xl mx-auto mb-10">Fale agora com um especialista e veja como podemos transformar a imagem do seu restaurante. A agenda é limitada!</p>
+            <a href="https://wa.me/+5511989644235" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 inline-block">
                 Falar com Especialista no WhatsApp
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-slate-900 text-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 [Seu Nome ou Nome da Agência]. Todos os direitos reservados.</p>
-            <p class="text-sm text-gray-400 mt-1">Seu restaurante merece ser a primeira escolha do cliente.</p>
+            <p class="font-poppins font-bold text-lg">[Seu Nome ou Nome da Agência]</p>
+            <p class="font-inter text-sm text-slate-400 mt-1">Seu restaurante merece ser a primeira escolha do cliente.</p>
         </div>
     </footer>
 
